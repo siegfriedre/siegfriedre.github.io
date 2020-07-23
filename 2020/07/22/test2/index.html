@@ -5,18 +5,18 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://siegfriedre.github.io">
   <title>test2 | Siegfried&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="这篇要密码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test2">
-<meta property="og:url" content="http://yoursite.com/2020/07/22/test2/index.html">
+<meta property="og:url" content="http://siegfriedre.github.io/2020/07/22/test2/index.html">
 <meta property="og:site_name" content="Siegfried&#39;s blog">
 <meta property="og:description" content="这篇要密码">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-22T08:45:01.000Z">
-<meta property="article:modified_time" content="2020-07-22T13:10:48.932Z">
+<meta property="article:modified_time" content="2020-07-23T02:44:32.220Z">
 <meta property="article:author" content="Siegfried">
 <meta property="article:tag" content="c++">
 <meta property="article:tag" content="入门">
@@ -192,9 +192,59 @@
         <a href="/2020/07/22/test2/" class="archive-article-date">
   	<time datetime="2020-07-22T08:45:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-22</time>
 </a>
+	<!--显示阅读时长-->
+	
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">9字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">1分</span>
+      </span>
+    </span>
+</div>
+          
+	<!--显示阅读时长完毕-->
         
       </header>
     
+    <!-- 目录内容 -->
+
+    <p class="show-toc-btn" id="show-toc-btn" onclick="showToc();" style="display:none">
+          <span class="btn-bg"></span>
+          <span class="btn-text">文章导航</span>
+          </p>
+	<div id="toc-article" class="toc-article">
+	    <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
+		<strong class="toc-title">文章目录</strong>
+           
+         </div>
+   <script type="text/javascript">
+	function showToc(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:block");
+		show_toc_btn.setAttribute("style","display:none");
+		};
+	function showBtn(){
+		var toc_article = document.getElementById("toc-article");
+		var show_toc_btn = document.getElementById("show-toc-btn");
+		toc_article.setAttribute("style","display:none");
+		show_toc_btn.setAttribute("style","display:block");
+		};
+   </script>
+      
+<!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
         <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -203,17 +253,24 @@
     <label for="hbePass">Welcome to my blog, enter password to read.</label>
     <div class="bottom-line"></div>
   </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="b945df7bb96554ac6851c6b7f5404fdcc0356494ae2f1d7a8e63ad12a1db1121">603f4cfd9d03c34be48059472a35fe1f314767280caf45e8b0e04f5e128d6722cfc924b6a462c912a00caedc74ada8d9ab807aaac1eab17470604010cdaeeee3bb9c998106b7336db400ee95fc7a59604efbb169abd45306a456893a3a15cec493bbc41cad6ce9572c3e7ada6e03374e6523af2bb77e3660f8f2957664b4be4984a685ba2bc5e98df93c7774c81bed305937714582d0cb590685c0f10d23ef90bf1c205f8aaf31b4adedab5463940eade059577de203fa4b4e0a244aecaa4a6c87b4eeed6ecf03257a2936d668eef969447af666129a7c023327d2ef61daa0c62a35d9dfb22eb9537a91e0ba10ef23a03832d08f28cc089b45b2fdfc476ed3fbac8a03ec610327d242a3a7b4304ad7366316855c8ea006b058f4bdac48abea24c9c296a186da409dc9caa9afa28ee5a56a4e34f942ac1ce059095307a545c5a7fc4ebe2f6a271c135416ea2fcb0a3cd21e01b21361a51c7678c37748338ac3d1e4a21a0f2469fab52cedd3a11f397aa8e4f401b3892a5b9c196dd6f47809d803b63b9fcad849ecb3e56085c2dad21306970e6a689e855bddf98d4f578ee30c1473357ae23712866cd9e03c493eb71d2cc6c56bd5cc604332c1754ac137c03ae22c8ed8456436795434605032a1477beb27ebe673b0f08bf5cd609d2f186fdfef7b651ffee6304429eeebe66b7c6323f2e5561563518fc4cba7647e95e678f48b1b26bc7ccec1b1da209150a71325ef84030909651af59a0f8f72b87020343f1f93ef02425b7863c70d2fb08b6c844bead4c641ab9e7581541eb186548af41efc143d20a88c05cde549d38d4114d5867450d224d200ab3a0326691f31527e53b5850af7fb905d31bb36ad3bf66aef673169c42ba9b892e5ac2f008b78d6078e4bb4b50b9ef15962f519c99ed28fb8ffef584eee6a32ab276e28e8e0dedc6361546a75ff7f1bf6e5bc2dae56984ecb88ebe84c81530c5ee415af2c0282d6837e285ae7d034dea6ab2c5a57712062f46e58414d7dfde7cff443b36a8189afdaca41c37a784750281a463fc4261e2410e7f413501d8bcd19f27340b7b0e6f0025135beaf70488fcc2f0476360040d17fcb3a7343e0edc603178cd4cf58f738bc337c21d2d0547aa9b04671110eb63590a917e8f1ddfd381655190f112f768334df6ae17f5652865bdb40ac7cf5da7d44fbab1e8bfd545c89c00d31133e98be42d32acef869ef313e640509f07168ae58fa244f5966c1292b83f661e3867e0121c7047c68d49fcfb9e299bffe86dacbc1484511a7121a3c2df7f0298c83339c16dde518065f794d9fe734658565b94e0ecc3c757b406b7535e55da9ae45d37586ee1f14b58b86d5fe521e6b38fabc61b4549a5d674b54aa04f40ee356be8227d5423bb548e9112f458b6590987f5faa394de301982cf3fbc3c4aea6feabd3a876993b8dc5f74d68e96c994f312f59fb35da2f3ad562167b9d396fb5101d256617d7a2f6396cb1fb94bd3f1ba75129465944432dae7525fcb9f9a14c23819365a4bcd780de1a69f4506c98a0343066947a8ac8aead9239b7486ce496ecaecc97fc91be159055eff5769f6d998c18b03ce4462243231da7df065833832bd7a16c654702</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="e228795e4ee22eb03f1f36caaea4182b7dfe84f789c8f3923fd655dbb6334b08">bfa5f0522cb7a7c5add62b8d48c59edc6596c6f33e73186af62d6210c1c8f359943ae1c3022601f6ffe5d2bf6e1aee7f42fe6c36a9ed2a7fe416262c5f12d5c3d29c595970e69ecf2438fc268719cb681e53981fef8caf56533cbf24e64a87da23c3585237e7ef56db8155c25c117beb5e8bf1e49342cce4d49ec5b560773a142bb3ff64c511a2b5661c66100880a248e1ff497c377fe40e72871a64288730ea7a2eab2c423c3c179bdcf6ed254e2531d4790a1f6f98a95e90f59255bde5935e4a440cbc51fc429adc91ad94c5cad02813555c3734a34293a28b99dae947255a32ce926f1340bb3c0a1a5e5581060c3f75921b83b97edc1e4b5f9bb575356306df1ca92478070a8461e87b4468f62110670f5ca2b9f8891e068fd54a4f2c315ac7209ecbb94d256db93224432e0d9006ba4d85a2e854656605b9015530deb6a2dea2516c08207605aa03a1581140a8a6fee6b3e56a4f46c903df30ff96898941e65b43437de3cd4b3d51b31d4f67fa34e0985b34ee814beca3299d826790b44067adb3966d2fa8d30657be39cf922be97f5d0e85978cb28f8b3e3dc5e9acd7d8942606ebcbf3860a5f59d1e3cfda202b98b6e0d8eefe6731778a2fc12c639f43871aaa609ba5156d5cc4471c6c3ffc9a62a61871bd950fe79c936cb6eb04f12f5f30155506aeacf6104751ee0763f45838d2ce1463c2c7bff92edc8b199106beadb967f06fb60cd794a435ea5a916fcc4f2a9409d698a2139e2d0fdcbd906f4e0edc822ff0d0973d659361c9e59e2325d0ba18cfcf7172911d76373b1edbe5e28b58a5481f808a772dfcc6a2df4ba18b5d8b78f79430acda722172fd9ddef1a4d8a60d5db6c8ebbcd2cf14832248b43e53eee4eeb64b3853b5ecb466d1b9f4e208f6df7587bda95a2580794a9d576d7e8ef2eca3daa2f02fcd96551165c38639865cf52d661542f8e7de5c930691a3a457b151184a88cb1449edc372081e2ac4368687f1fae900f9f8cd39a61485680b3523ffa000593c589dae55d9bb498f5dfd5fc79a23683bb708d56343bd407ca8f2524942fc88eaa70b26ba782c829c183f7ef5aa24afcba8425ff492b6bbcac4b7fd3ff1c5b29a7c8385ffbddc6fb0c8c66a0dd85599d0381c3fa5bdd7b2deeb81fbf2adb31b8e8e33da627bb0cdc3b76b76a254d5ffcc03ad9b0b883a6b52672c331b4b7d74bf393301100a1613280b5a330a4ee40b6859993d028b3992742636dbb898905041347840dc9fe7939fa518024d4f3666b97b27998dd5114250e65cbfcde1a2513e2d7edfd7482b77d08b5230747a135c4652987a0e80e81c149bd642b4372280882e740ac490f6dd7b3136aa64aab96afb8c2c6f7e41bdb592f27e644cdae146ec12acf711fe3d84c6db6a01c99d369e4a4a3f92563a7224dd56db3c96fbeb05e8c16e77b7d37eb8318c6319cb39eab7a74b9d9b0ee4d98bcacd0475db2342a92eeb9bf1a18d373532a659fef6f59b6a73f20c0b1f7936622d531052f6d3288e8b803738d055c6be42be7094a8f14d0a9f27d3a575d1a7df3589479d8b7533256a8adf0944c7fc442d2c179721238f2a2c7ff0b5f77cad33ce915094cce05848163ee4c2d77eefe0d219ca98bb24a6a395d2d40b38e93f880c1aea45fe6ea645626a1f88dc2bea6225150c0a181abd9440f7393c5020d6cd4b06a95fbe5ce40a6c60de792dea12080c0ed15e13d701715c1009f5aa9314098bccd69b62b45dc23e005f24e800644f46dc02601d0ea1c7b463e3fc4abd1f788691985b83c411aeb79eff68759f18c9a18bd87bad2d47fd4b48e16618aac59f1941355b582011928140ca4f731cffaf54acbf9e6c9c538d4bd6382370404fb6a766267e25a9bcbef072a476dd3785247eac9672c4597e0b4a5287b8baf43fd10f035fffd56d984a9e8f05cff4a07624432cf20d1a294e90e1311c2d8261d0032af2</script>
 </div>
 <script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
 
-	<!-- 增加版权声明 -->
 	
-	
-	  <div class="declare" hidden="hidden"></div>
-	
-	<!-- 增加版权声明结束 -->
+	<!-- 版权声明 -->
+	  
+	    <!--添加版权声明-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <ul class="copyright" hidden="hidden"></ul>
+
+<!-- 添加版权声明》 -->
+	  
+	<!-- 声明结束 -->
 
       
         <div class="page-reward">
@@ -321,7 +378,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2020/07/22/test2/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://siegfriedre.github.io/2020/07/22/test2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -354,7 +411,6 @@
 
 
 
-
           </div>
         </div>
       </div>
@@ -370,9 +426,11 @@
     </div>
   </div>
   <div class="footer-right">
-<span id="busuanzi_container_site_pv">    本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-&nbsp
-<span id="busuanzi_container_site_uv">  本站访客数<span id="busuanzi_value_site_uv"></span>人次</span>
+<!-- # PV方式，单个用户连续点击 n 篇，记录 n 次记录值 -->
+<span id="busuanzi_container_site_pv"> 总访问量: <span id="busuanzi_value_site_pv"></span> /</span>
+<!-- # UV方式，单个用户连续点击 n 篇，记录 1 次记录值 -->
+<span id="busuanzi_container_site_uv">  访客数:<span id="busuanzi_value_site_uv"></span></span>
+
 </div>
 </footer>
 <!--页面点击小红心-->
@@ -417,7 +475,9 @@ MathJax.Hub.Queue(function() {
 </script>
 
 
-<script  async  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
